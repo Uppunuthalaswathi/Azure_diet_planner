@@ -211,5 +211,3 @@ def delete_diet(id):
         cursor.close()
         conn.close()
 
-if __name__ == "__main__":
-    app.run(debug=True)
