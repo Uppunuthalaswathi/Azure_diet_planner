@@ -18,6 +18,7 @@ def get_db_connection():
             password=os.environ.get("DB_PASSWORD"),
             database=os.environ.get("DB_NAME"),
             port=3306,
+            ssl_ca="BaltimoreCyberTrustRoot.crt.pem",
             connection_timeout=5   # 🔥 VERY IMPORTANT
         )
     except Error as e:
